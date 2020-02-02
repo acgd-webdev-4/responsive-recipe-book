@@ -1,0 +1,151 @@
+html, .recipe-tag {
+  font-family: kepler-std, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  font-family: acumin-pro, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.tag {
+  font-family: kepler-std, serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.bold {
+  font-family: acumin-pro, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.nav {
+  text-align: right;
+}
+
+.hover-box {
+  color: #000;
+}
+
+.hover-box-caption {
+  bottom: -10em;
+  background-color: rgba(255, 255, 255, .8);
+  transition: all .25s linear;
+}
+
+.hover-box:hover .hover-box-caption,
+.hover-box:focus .hover-box-caption {
+  bottom: 0;
+}
+
+.hover-box-img {
+  transition: all .2s linear;
+}
+
+.hover-box:focus {
+  z-index: 10;
+}
+
+header {
+  background-color: #41ad49;
+  border-bottom: 3px solid #41ad49;
+  border-top: 3px solid #41ad49;
+}
+
+header a, footer a {
+  text-decoration: none;
+  border-bottom: .15em solid currentColor;
+  color: #000;
+}
+
+header a:hover, footer a:hover {
+  border-bottom: 1px solid #000;
+  transition: all .6s linear;
+}
+
+footer {
+  background-color: #f1da4a;
+  border-bottom: 3px solid #f1da4a;
+  border-top: 3px solid #f1da4a;
+  background-size: 2px 5px, 2px 5px, 18px auto;
+  background-repeat: repeat-x, repeat-x, repeat;
+  background-position: left top, left bottom, left top;
+}
+
+.logo-gutter {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.search-input {
+  border-color: #41ad49;
+  background-position: .2em center;
+  background-size: 1.2em auto;
+  padding-left: 1.5em;
+}
+
+.search-btn {
+  background-image: linear-gradient(to bottom, #41ad49, #41ad49);
+  border-color: #41ad49;
+}
+
+.search-label {
+  text-align: right;
+}
+
+
+@media only screen and (min-width: 25em) {
+
+  .unit-offset-s-1-4 {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  header nav ul li {
+    display: inline-block;
+    text-align: right;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  .right-nav {
+    text-align: left;
+  }
+
+  .unit-offset-s-1-4 {
+    margin-left: 0;
+  }
+
+  .logo-size {
+    max-width: 12em;
+  }
+
+  .recipe-tag {
+    max-width: 50%;
+    transform: translateX(100%);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .extra-gutter {
+    margin: 0 5em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .extra-gutter {
+    margin: 0 10em;
+  }
+
+}
